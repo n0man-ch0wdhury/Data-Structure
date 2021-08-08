@@ -30,8 +30,11 @@ void solve()
     char s[N];
     scanf("%[^\n]", s);
     int len = strlen(s);
+    int br = 0;
     s[len] = ')';
+    s[len+1] = '\0';
     push('(');
+
     int j = 0;
     for(int i = 0; i < strlen(s); i++){
         if(s[i] == '('){

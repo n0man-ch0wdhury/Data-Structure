@@ -38,12 +38,14 @@ void print()
 
 int main()
 {
-    printf("Menu:\n1. PUSH\n2. POP\n3. PRINT\n0. EXIT\nEnter your choice: ");
+    printf("Menu:\n1. PUSH\n2. POP\n3. PRINT\n0. EXIT\n");
     while(1)
     {
+        printf("Enter your choice: ");
         int choice;
         scanf("%d", &choice);
-        if(choice == 1)
+        if(choice == 0) break;
+        else if(choice == 1)
         {
             int val;
             scanf("%d", &val);
@@ -53,10 +55,11 @@ int main()
         {
             pop();
         }
-        else
+        else if(choice == 3)
         {
             print();
         }
+        else printf(“Invalid choice\n);
     }
 
     return 0;

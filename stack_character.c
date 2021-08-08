@@ -38,9 +38,10 @@ void print()
 
 int main()
 {
-    printf("Menu:\n1. PUSH\n2. POP\n3. PRINT\n0. EXIT\nEnter your choice: ");
+    printf("Menu:\n1. PUSH\n2. POP\n3. PRINT\n0. EXIT\n");
     while(1)
     {
+        printf("Enter your choice: ");
         int choice;
         scanf("%d", &choice);
         if(choice == 0) break;
